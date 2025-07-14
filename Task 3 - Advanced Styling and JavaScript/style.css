@@ -1,0 +1,82 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { 
+    margin: 0; 
+    font-family: 'Inter', sans-serif; 
+    background: #e0f7fa;
+    color: #1f2937; 
+    line-height: 1.6; 
+}
+header { 
+    background: #008080; 
+    padding: 30px; 
+    text-align: center; 
+    color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+h1 { 
+    margin: 0; 
+    font-size: 3rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.container { 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 20px; 
+}
+.instructions { 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.quiz, .joke { 
+    margin-bottom: 40px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+.question { 
+    font-size: 1.5rem; 
+    margin-bottom: 20px; 
+    transition: opacity 0.5s ease; 
+}
+.options { 
+    list-style: none; 
+    padding: 0; 
+}
+.options li { 
+    margin: 10px 0; 
+}
+button { 
+    background: #3b82f6; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background 0.3s; 
+}
+button:hover { 
+    background: #2563eb; 
+}
+.progress { 
+    margin: 20px 0; 
+    height: 20px; 
+    background: #f0f0f0; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+.progress-bar { 
+    height: 100%; 
+    background: #3b82f6; 
+    width: 0; 
+    transition: width 0.5s; 
+}
+.joke { font-size: 1.2rem; }
+@media (max-width: 600px) {
+    h1 { font-size: 2.5rem; }
+    .question { font-size: 1.2rem; }
+}

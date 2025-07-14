@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Interactive Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ultimate Interactive Experience</h1>
+    </header>
+    <div class="container">
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>Welcome to the quiz! Select the correct answer for each question and click "Next Question" to proceed. At the end of the quiz, you can see your score and restart if you wish!</p>
+        </div>
+        <div class="quiz">
+            <h2>Quiz Challenge</h2>
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div id="quiz-container"></div>
+            <button id="next-button">Next Question</button>
+            <button id="restart-button" style="display: none;">Restart Quiz</button>
+            <p id="result" style="font-weight: bold;"></p>
+            <p id="score" style="font-weight: bold;"></p>
+            <p id="fun-fact" style="font-weight: bold;"></p>
+            <p id="timer" style="font-weight: bold;"></p>
+        </div>
+        <div class="joke">
+            <h2>Random Joke</h2>
+            <p id="joke-text">Click the button to get a joke!</p>
+            <button id="joke-button">Get a Joke</button>
+        </div>
+    </div>
+<script src="script.js"></script>S
+</body>
+
+</html>
