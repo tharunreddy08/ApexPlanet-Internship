@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Handicrafts - Shop Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="notification" class="notification">
+        Item added to cart successfully!
+    </div>
+    
+    <header>
+        <div class="container">
+            <h1>Indian Handmade Treasures</h1>
+            <p>Authentic products crafted with love</p>
+            <div class="cart-icon" onclick="openCart()">
+                🛒
+                <div id="cart-count" class="cart-count">0</div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="filters">
+            <div class="filter-group">
+                <label class="filter-label">Sort By Price</label>
+                <select id="price-sort" onchange="sortProducts()">
+                    <option value="low-to-high">Low to High</option>
+                    <option value="high-to-low">High to Low</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label class="filter-label">Categories</label>
+                <div class="category-btns">
+                    <button class="category-btn active" onclick="filterProducts('all')">All</button>
+                    <button class="category-btn" onclick="filterProducts('handicraft')">Handicraft</button>
+                    <button class="category-btn" onclick="filterProducts('textile')">Textile</button>
+                    <button class="category-btn" onclick="filterProducts('jewelry')">Jewelry</button>
+                    <button class="category-btn" onclick="filterProducts('food')">Food</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="products-grid" id="products-grid">
+
+        </div>
+        <script src="script.js"></script>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Indian Treasures</h2>
+                <p>Handcrafted with love and tradition</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Artisans</a></li>
+                    <li><a href="#">Craftsmanship</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <div class="newsletter-form">
+                    <p>Subscribe to get updates on new products and special offers</p>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">→</button>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 25px;">Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="Pinterest">P</a>
+                </div>
+                
+                <h3 style="margin-top: 25px;">Payment Methods</h3>
+                <div class="payment-methods">
+                    <img src="https://i.ibb.co/Qfvn4z6/payment-methods.png" alt="Accepted payment methods">
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Indian Treasures. All Rights Reserved. | Designed with ❤️ in India</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
