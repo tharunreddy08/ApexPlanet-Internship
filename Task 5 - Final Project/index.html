@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 tabindex="0"> Dynamic Blog Showcase</h1>
+        <div class="search-container">
+            <input type="search" id="search" aria-label="Search posts" placeholder="Search posts..." />
+            <span class="material-icons search-icon" aria-hidden="true">search</span>
+        </div>
+    </header>
+    <main class="container">
+        <section class="posts" id="posts" aria-live="polite" aria-label="Blog Posts">
+            <!-- Posts inserted dynamically -->
+        </section>
+        <aside class="sidebar" aria-label="Blog categories">
+            <h3 tabindex="0">Categories</h3>
+            <ul id="categories-list">
+                <!-- Categories inserted dynamically -->
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025  Dynamic Blog Showcase. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for full post details -->
+    <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+        <article class="modal" role="document">
+            <button aria-label="Close" class="close-btn" id="modal-close-btn">&times;</button>
+            <h2 id="modal-title"></h2>
+            <img src="" alt="" id="modal-image" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;" />
+            <p id="modal-content"></p>
+        </article>
+    </div>
+     <script src="script.js"></script>
+</body>
+
+</html>
